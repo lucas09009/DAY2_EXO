@@ -4,4 +4,4 @@ class Config:
 
 
 
-# git remote add origin https://github.com/nouveau-utilisateur/nouveau-depot.git
+# git remote add origin https://github.com/nouveau-utilisateur/nouveau-depot.gitgit remote rm origin
