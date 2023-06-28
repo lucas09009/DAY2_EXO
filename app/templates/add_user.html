@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add user</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='stylesheet.css')}}"> 
+        
+    </head>
+    <body>
+    <button class="darkMode">Dark Mode</button>
+    <form method="POST" action="/add_user">
+        <div class="container">
+        {{ form.hidden_tag() }}
+        <h1 class="h1">Add City</h1><hr>
+
+        {{ form.user_name.label(class='ctn') }}
+        {{ form.user_name(class='champ_de_saisie', size=40) }}<br>
+
+        {{ form.street.label(class='con') }}
+        {{ form.street(class='champ_de_saisie' ,size=40 ) }}<br>
+
+        {{ form.city.label(class='noi') }}
+        {{ form.city(class='champ_de_saisie', size=40) }}<br>
+
+        {{ form.zipcode.label(class='ca') }}
+        {{ form.zipcode(class='champ_de_saisie', size=40 ) }}<br>
+
+        {{ form.submit(class='submit') }}
+       
+    </div>
+    </form>
+</body>
+</html>

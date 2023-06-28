@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Liste des utilisateurs</h1>
+    <ul>
+        {{%for items in user%}}
+        <li>
+            <p>Name:{{ items.name}}</p>
+            <p>Street:{{ items.address.street}}</p>
+            <p>City:{{ items.address.city}}</p>
+            <p>Zipcode:{{ items.address.zipcode}}</p>
+        </li>
+        {{% endfor %}}
+    </ul>
+</body>
+</html>
